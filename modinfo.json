@@ -1,0 +1,23 @@
+{
+  "author": "wondible",
+  "build": "79600",
+  "category": ["settings", "ui"],
+  "context": "client",
+  "date": "2015/04/03",
+  "description": "More possible functions for key binding.",
+  "display_name": "Keybind Extensions",
+  "forum": null,
+  "identifier": "com.wondible.pa.keybind_extensions",
+  "priority": 100,
+  "scenes": {
+    "global_mod_list": [
+      "coui://ui/mods/keybind_extensions/keybinds.js"
+    ],
+    "live_game": [
+      "coui://ui/mods/keybind_extensions/live_game.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
