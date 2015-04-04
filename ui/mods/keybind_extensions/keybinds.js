@@ -20,4 +20,16 @@
   kb('toggle_pan_camera')
   kb('start_pan_camera')
   kb('stop_pan_camera')
+
+  set = 'general'
+  display_sub_group = 'Alternate ESC/Back'
+  kb('modal_back_no_menu')
+  kb('open_option_menu')
+  kb('close_option_menu')
+  kb('toggle_option_menu')
+  kb('close_chronocam')
+  kb('cancel_selection')
+  kb('clear_build_sequence')
+  kb('end_fab_mode')
+  kb('end_command_mode')
 })()
