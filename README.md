@@ -8,6 +8,8 @@ More possible functions for key binding.
 
 Toggle, start, and a stop a middle-button-line mode where the planet follows the pointer.  This only uses the regular kepress event keybinding logic, so it is not hold to grab like a mouse button.
 
+There is also a patch that makes next and previous planet work always focus a planet when you were focused on the sun.
+
 ### Alternate ESC/Back
 
 I tend to hit ESC too many times and end up with an option menu.  Breaks out all the pieces.

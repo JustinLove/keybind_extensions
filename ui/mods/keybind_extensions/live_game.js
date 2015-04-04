@@ -31,6 +31,29 @@
     }
   }
 
+  // patch that makes next and previous planet always work when focused on sun
+  model.changeFocusPlanet = function (delta) {
+      var index = model.focusPlanet();
+      var t = (index + delta) % (model.celestialViewModels().length - 1);
+
+      if (index === -1)
+          t = 0;
+
+      // Begin change
+      if (t == index) {
+        model.focusPlanet.notifySubscribers()
+      }
+      // End change
+
+      while (t !== index) {
+          if (!model.celestialViewModels()[t].dead()) {
+              model.focusPlanet(t);
+              return;
+          }
+          t = (t + delta) % (model.celestialViewModels().length - 1);
+      }
+  }
+
   //**************** alternate esc/back ************
 
   model.end_fab_mode = model.endFabMode
