@@ -31,6 +31,25 @@
     }
   }
 
+  // **************** planet camera ****************
+
+  model.focus_planet_1 = function() {model.focusPlanet(0)}
+  model.focus_planet_2 = function() {model.focusPlanet(1)}
+  model.focus_planet_3 = function() {model.focusPlanet(2)}
+  model.focus_planet_4 = function() {model.focusPlanet(3)}
+  model.focus_planet_5 = function() {model.focusPlanet(4)}
+  model.focus_planet_6 = function() {model.focusPlanet(5)}
+  model.focus_planet_7 = function() {model.focusPlanet(6)}
+  model.focus_planet_8 = function() {model.focusPlanet(7)}
+  model.focus_planet_9 = function() {model.focusPlanet(8)}
+  model.focus_planet_10 = function() {model.focusPlanet(9)}
+  model.focus_planet_11 = function() {model.focusPlanet(10)}
+  model.focus_planet_12 = function() {model.focusPlanet(11)}
+  model.focus_planet_13 = function() {model.focusPlanet(12)}
+  model.focus_planet_14 = function() {model.focusPlanet(13)}
+  model.focus_planet_15 = function() {model.focusPlanet(14)}
+  model.focus_planet_16 = function() {model.focusPlanet(15)}
+
   // patch that makes next and previous planet always work when focused on sun
   model.changeFocusPlanet = function (delta) {
       var index = model.focusPlanet();
