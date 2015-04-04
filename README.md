@@ -8,7 +8,20 @@ More possible functions for key binding.
 
 Toggle, start, and a stop a middle-button-line mode where the planet follows the pointer.  This only uses the regular kepress event keybinding logic, so it is not hold to grab like a mouse button.
 
-Focus planet 1-16.  There is also a patch that makes next and previous planet work always focus a planet when you were focused on the sun.
+### Focus planet 1-16.
+
+There is also a patch that makes next and previous planet work always focus a planet when you were focused on the sun.
+
+## Fixed planet anchors
+
+Look at...
+
+- North pole
+- South pole
+- Equator, 0 degrees
+- Equator, 90 degrees
+- Equator, 180 degrees
+- Equator, 270 degrees
 
 ### Alternate ESC/Back
 

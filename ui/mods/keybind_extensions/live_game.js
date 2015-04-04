@@ -31,6 +31,39 @@
     }
   }
 
+  // ************** fixed anchors *************
+  var lookAt = function(location) {
+    api.camera.lookAt({
+      location: location,
+      zoom: 'orbital',
+      planet_id: model.focusPlanet()
+    })
+    api.camera.alignToPole()
+  }
+  model.look_at_north_pole = function() {
+    lookAt({x:0.001, y:0.001, z:500})
+  }
+
+  model.look_at_south_pole = function() {
+    lookAt({x:0.001, y:0.001, z:-500})
+  }
+
+  model.look_at_equator_0 = function() {
+    lookAt({x:0.001, y:-500, z:0.001})
+  }
+
+  model.look_at_equator_90 = function() {
+    lookAt({x:500, y:0.001, z:0.001})
+  }
+
+  model.look_at_equator_180 = function() {
+    lookAt({x:0.001, y:500, z:0.001})
+  }
+
+  model.look_at_equator_270 = function() {
+    lookAt({x:-500, y:0.001, z:0.001})
+  }
+
   // **************** planet camera ****************
 
   model.focus_planet_1 = function() {model.focusPlanet(0)}

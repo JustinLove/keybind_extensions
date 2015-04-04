@@ -22,6 +22,15 @@
   kb('stop_pan_camera')
 
   set = 'camera'
+  display_sub_group = 'Fixed Anchors'
+  kb('look_at_north_pole')
+  kb('look_at_south_pole')
+  kb('look_at_equator_0')
+  kb('look_at_equator_90')
+  kb('look_at_equator_180')
+  kb('look_at_equator_270')
+
+  set = 'camera'
   display_sub_group = 'Focus Planets'
   kb('focus_planet_1')
   kb('focus_planet_2')
