@@ -12,7 +12,7 @@ Focus planet 1-16.  There is also a patch that makes next and previous planet wo
 
 ### Alternate ESC/Back
 
-I tend to hit ESC too many times and end up with an option menu.  Breaks out all the pieces.
+I tend to hit ESC too many times and end up with an option menu.  Breaks out all the pieces.  Tip: keep the basic version bound to something in case the mod gets turned off for any reason.
 
 - Modal back (no menu)
 - Open option menu
