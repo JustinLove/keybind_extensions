@@ -3,7 +3,7 @@
   var display_sub_group = 'General'
   var kb = function(name, def) {
     action_sets[set][name] = function () {
-      if (model[name]) model[name]()
+      if (model[name]) model[name].apply(this, arguments)
     }
     api.settings.definitions.keyboard.settings[name] = {
       title: name.replace(/_/g, ' '),
@@ -20,6 +20,7 @@
   kb('toggle_pan_camera')
   kb('start_pan_camera')
   kb('stop_pan_camera')
+  kb('hold_to_pan_camera')
 
   set = 'camera'
   display_sub_group = 'Fixed Anchors'

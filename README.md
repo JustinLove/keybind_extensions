@@ -6,7 +6,9 @@ More possible functions for key binding.
 
 ### Camera
 
-Toggle, start, and a stop a middle-button-like mode where the planet follows the pointer.  This only uses the regular keypress event keybinding logic, so it is not hold to grab like a mouse button.
+Toggle, start, and a stop a middle-button-like mode where the planet follows the pointer.  These only uses the regular keypress event keybinding logic.
+
+Hold to pan operates closer to the middle mouse button.  I've found regular keys awkward to use this way, but space or an underused modifier may be more comfortable.
 
 ### Focus planet 1-16.
 

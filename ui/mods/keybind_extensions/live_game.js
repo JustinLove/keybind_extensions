@@ -1,5 +1,25 @@
 (function() {
 
+  // http://stackoverflow.com/questions/596481/simulate-javascript-key-events
+  var resendEvent = function(event) {
+    var keyboardEvent = document.createEvent("KeyboardEvent");
+    var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+
+    keyboardEvent[initMethod](
+      "keyup", // event type : keydown, keyup, keypress
+      true, // bubbles
+      true, // cancelable
+      event.view, // viewArg: should be window
+      event.ctrlKey, // ctrlKeyArg
+      event.altKey, // altKeyArg
+      event.shiftKey, // shiftKeyArg
+      event.metaKey, // metaKeyArg
+      event.keyCode, // keyCodeArg : unsigned long the virtual key code, else 0
+      event.keyIdentifier // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
+    );
+    document.dispatchEvent(keyboardEvent);
+  }
+
   //**************** pointer locked pan ************
   var panPreviousMode
   var panHolodeck
@@ -29,6 +49,22 @@
     if (model.mode() === 'camera') {
       model.mode(panPreviousMode);
     }
+  }
+
+  model.hold_to_pan_camera = function(downEvent) {
+    model.start_pan_camera()
+    input.capture(panHolodeck.div, function (event) {
+      var release = ((event.type === 'keyup') && (event.keyCode === downEvent.keyCode)) 
+      var escKey = ((event.type === 'keydown') && (event.keyCode === keyboard.esc));
+      if (release || escKey) {
+        input.release();
+
+        // mousetrap waits for a keyup event before sending the NEXT keydown event.
+        if (release) resendEvent(event)
+
+        model.stop_pan_camera()
+      }
+    });
   }
 
   // ************** fixed anchors *************
