@@ -142,6 +142,43 @@
       }
   }
 
+  // *************** selection edit **************
+
+  model.only_bots_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Bot', null, false) }
+  model.remove_bots_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Bot', null, true) }
+
+  model.only_tanks_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Tank', null, false) }
+  model.remove_tanks_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Tank', null, true) }
+
+  model.only_land_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Land', null, false) }
+  model.remove_land_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Land', null, true) }
+
+  model.only_air_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Air', null, false) }
+  model.remove_air_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Air', null, true) }
+
+  model.only_naval_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Naval', null, false) }
+  model.remove_naval_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Naval', null, true) }
+
+  model.only_orbital_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Orbital', null, false) }
+  model.remove_orbital_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Orbital', null, true) }
+
+  model.only_advanced_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Advanced', null, false) }
+  model.remove_advanced_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Advanced', null, true) }
+
   //**************** alternate esc/back ************
 
   model.end_fab_mode = model.endFabMode

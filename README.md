@@ -14,7 +14,7 @@ Hold to pan operates closer to the middle mouse button.  I've found regular keys
 
 There is also a patch that makes next and previous planet work always focus a planet when you were focused on the sun.
 
-## Fixed planet anchors
+### Fixed planet anchors
 
 Look at...
 
@@ -24,6 +24,18 @@ Look at...
 - Equator, 90 degrees
 - Equator, 180 degrees
 - Equator, 270 degrees
+
+### Selection Edit
+
+Only X in Selection and Remove X from Selection:
+
+- Bot
+- Tank
+- Land
+- Air
+- Naval
+- Orbital
+- Advanced
 
 ### Alternate ESC/Back
 

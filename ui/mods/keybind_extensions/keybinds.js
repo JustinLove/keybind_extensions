@@ -50,6 +50,23 @@
   kb('focus_planet_15')
   kb('focus_planet_16')
 
+  set = 'gameplay'
+  display_sub_group = 'Selection Edit'
+  kb('only_bots_in_selection')
+  kb('remove_bots_from_selection')
+  kb('only_tanks_in_selection')
+  kb('remove_tanks_from_selection')
+  kb('only_land_in_selection')
+  kb('remove_land_from_selection')
+  kb('only_air_in_selection')
+  kb('remove_air_from_selection')
+  kb('only_naval_in_selection')
+  kb('remove_naval_from_selection')
+  kb('only_orbital_in_selection')
+  kb('remove_orbital_from_selection')
+  kb('only_advanced_in_selection')
+  kb('remove_advanced_from_selection')
+
   set = 'general'
   display_sub_group = 'Alternate ESC/Back'
   kb('navigate_back_no_menu')
