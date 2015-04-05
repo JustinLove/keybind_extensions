@@ -51,7 +51,7 @@
 
   set = 'general'
   display_sub_group = 'Alternate ESC/Back'
-  kb('modal_back_no_menu')
+  kb('navigate_back_no_menu')
   kb('open_option_menu')
   kb('close_option_menu')
   kb('toggle_option_menu')

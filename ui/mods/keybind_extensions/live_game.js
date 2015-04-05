@@ -124,7 +124,7 @@
   model.close_chronocam = function() { model.showTimeControls(false) }
   model.end_command_mode = model.endCommandMode
 
-  model.modal_back_no_menu = function () {
+  model.navigate_back_no_menu = function () {
     if (model.mode() === 'fab')
       model.endFabMode();
     else if (model.chatSelected()) {
