@@ -6,7 +6,7 @@ More possible functions for key binding.
 
 ### Camera
 
-Toggle, start, and a stop a middle-button-line mode where the planet follows the pointer.  This only uses the regular kepress event keybinding logic, so it is not hold to grab like a mouse button.
+Toggle, start, and a stop a middle-button-line mode where the planet follows the pointer.  This only uses the regular keypress event keybinding logic, so it is not hold to grab like a mouse button.
 
 ### Focus planet 1-16.
 

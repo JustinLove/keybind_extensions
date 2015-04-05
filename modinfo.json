@@ -3,10 +3,10 @@
   "build": "79600",
   "category": ["settings", "ui"],
   "context": "client",
-  "date": "2015/04/03",
+  "date": "2015/04/04",
   "description": "More possible functions for key binding.",
   "display_name": "Keybind Extensions",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/rel-keybind-extensions.68478/",
   "identifier": "com.wondible.pa.keybind_extensions",
   "priority": 100,
   "scenes": {
@@ -18,6 +18,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
 
