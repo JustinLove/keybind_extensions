@@ -198,6 +198,11 @@
   model.remove_air_from_selection = function() {
     api.select.fromSelectionWithTypeFilter('Air', null, true) }
 
+  model.only_fighters_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Fighter', null, false) }
+  model.remove_fighters_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Fighter', null, true) }
+
   model.only_naval_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Naval', null, false) }
   model.remove_naval_from_selection = function() {

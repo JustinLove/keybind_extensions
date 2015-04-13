@@ -40,6 +40,7 @@ Only X in Selection and Remove X from Selection:
 - Tank
 - Land
 - Air
+- Fighter
 - Naval
 - Orbital
 - Advanced

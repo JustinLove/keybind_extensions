@@ -75,6 +75,8 @@
   kb('only_land_in_selection')
   kb('remove_land_from_selection')
   kb('only_air_in_selection')
+  kb('remove_fighters_from_selection')
+  kb('only_fighters_in_selection')
   kb('remove_air_from_selection')
   kb('only_naval_in_selection')
   kb('remove_naval_from_selection')

@@ -1,6 +1,7 @@
 ## 1.2.0
 
 - spectator vision: all, player N, previous/next
+- only/remove fighters in selection
 
 ## 1.1.0
 
