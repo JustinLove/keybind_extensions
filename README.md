@@ -32,6 +32,14 @@ Look at...
 - Next player
 - Player N (1-10)
 
+### Selection
+
+Select all on screen (double tap for planet)
+
+- Bot
+- Tank
+- Fighter
+
 ### Selection Edit
 
 Only X in Selection and Remove X from Selection:

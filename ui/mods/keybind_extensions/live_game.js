@@ -20,6 +20,13 @@
     document.dispatchEvent(keyboardEvent);
   }
 
+  model.currentFocusPlanetId = ko.observable(0)
+  var live_game_focus_planet_changed = handlers.focus_planet_changed
+  handlers.focus_planet_changed = function (payload) {
+    live_game_focus_planet_changed(payload)
+    model.currentFocusPlanetId(payload.focus_planet_id);
+  };
+
   //**************** pointer locked pan ************
   var panPreviousMode
   var panHolodeck
@@ -175,6 +182,25 @@
 
     model.visionSelect((current + 1) % model.playerVisionFlags().length, event)
   }
+
+  // ************** selection ***********
+  model.select_all_bots_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Bot', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Bot', 'Fabber');
+  })
+
+  model.select_all_tanks_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Tank', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Tank', 'Fabber');
+  })
+
+  model.select_all_fighters_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
+  })
 
   // *************** selection edit **************
 

@@ -67,6 +67,12 @@
   kb('vision_player_10')
 
   set = 'gameplay'
+  display_sub_group = 'Selection'
+  kb('select_all_bots_on_screen')
+  kb('select_all_tanks_on_screen')
+  kb('select_all_fighters_on_screen')
+
+  set = 'gameplay'
   display_sub_group = 'Selection Edit'
   kb('only_construction_in_selection')
   kb('remove_construction_from_selection')
