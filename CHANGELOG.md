@@ -2,6 +2,7 @@
 
 - spectator vision: all, player N, previous/next
 - only/remove fighters in selection
+- only/remove construction in selection (e.g. combat fabs)
 
 ## 1.1.0
 

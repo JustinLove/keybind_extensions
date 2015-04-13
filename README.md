@@ -36,6 +36,7 @@ Look at...
 
 Only X in Selection and Remove X from Selection:
 
+- Construction (e.g. combat fabs)
 - Bot
 - Tank
 - Land

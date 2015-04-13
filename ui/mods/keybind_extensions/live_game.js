@@ -178,6 +178,11 @@
 
   // *************** selection edit **************
 
+  model.only_construction_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Construction', null, false) }
+  model.remove_construction_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Construction', null, true) }
+
   model.only_bots_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Bot', null, false) }
   model.remove_bots_from_selection = function() {
