@@ -25,7 +25,7 @@ Look at...
 - Equator, 180 degrees
 - Equator, 270 degrees
 
-### Specatator Vision
+### Spectator Vision
 
 - All players
 - Previous player
