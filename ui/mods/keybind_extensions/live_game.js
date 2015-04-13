@@ -142,6 +142,20 @@
       }
   }
 
+  // ************** spectator vision ************
+
+  model.vision_all_players = function() { model.visionSelectAll() }
+  model.vision_player_1 = function(event) { model.visionSelect(0, event) }
+  model.vision_player_2 = function(event) { model.visionSelect(1, event) }
+  model.vision_player_3 = function(event) { model.visionSelect(2, event) }
+  model.vision_player_4 = function(event) { model.visionSelect(3, event) }
+  model.vision_player_5 = function(event) { model.visionSelect(4, event) }
+  model.vision_player_6 = function(event) { model.visionSelect(5, event) }
+  model.vision_player_7 = function(event) { model.visionSelect(6, event) }
+  model.vision_player_8 = function(event) { model.visionSelect(7, event) }
+  model.vision_player_9 = function(event) { model.visionSelect(8, event) }
+  model.vision_player_10 = function(event) { model.visionSelect(9, event) }
+
   // *************** selection edit **************
 
   model.only_bots_in_selection = function() {

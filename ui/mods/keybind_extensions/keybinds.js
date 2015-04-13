@@ -50,6 +50,20 @@
   kb('focus_planet_15')
   kb('focus_planet_16')
 
+  set = 'camera'
+  display_sub_group = 'Specator Vision'
+  kb('vision_all_players')
+  kb('vision_player_1')
+  kb('vision_player_2')
+  kb('vision_player_3')
+  kb('vision_player_4')
+  kb('vision_player_5')
+  kb('vision_player_6')
+  kb('vision_player_7')
+  kb('vision_player_8')
+  kb('vision_player_9')
+  kb('vision_player_10')
+
   set = 'gameplay'
   display_sub_group = 'Selection Edit'
   kb('only_bots_in_selection')
