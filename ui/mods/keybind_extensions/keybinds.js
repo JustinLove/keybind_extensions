@@ -71,6 +71,7 @@
   kb('select_all_bots_on_screen')
   kb('select_all_tanks_on_screen')
   kb('select_all_fighters_on_screen')
+  kb('select_all_scouts_on_screen')
 
   set = 'gameplay'
   display_sub_group = 'Selection Edit'
@@ -83,9 +84,11 @@
   kb('only_land_in_selection')
   kb('remove_land_from_selection')
   kb('only_air_in_selection')
-  kb('remove_fighters_from_selection')
-  kb('only_fighters_in_selection')
   kb('remove_air_from_selection')
+  kb('only_fighters_in_selection')
+  kb('remove_fighters_from_selection')
+  kb('only_scouts_in_selection')
+  kb('remove_scouts_from_selection')
   kb('only_naval_in_selection')
   kb('remove_naval_from_selection')
   kb('only_orbital_in_selection')

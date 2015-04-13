@@ -2,8 +2,9 @@
 
 - spectator vision: all, player N, previous/next
 - only/remove fighters in selection
+- only/remove scouts in selection
 - only/remove construction in selection (e.g. combat fabs)
-- select all bot/tank/fighter on screen (double tap for planet)
+- select all bot/tank/fighter/scout on screen (double tap for planet)
 
 ## 1.1.0
 

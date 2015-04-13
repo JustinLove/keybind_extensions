@@ -39,6 +39,7 @@ Select all on screen (double tap for planet)
 - Bot
 - Tank
 - Fighter
+- Scout
 
 ### Selection Edit
 
@@ -50,6 +51,7 @@ Only X in Selection and Remove X from Selection:
 - Land
 - Air
 - Fighter
+- Scout
 - Naval
 - Orbital
 - Advanced

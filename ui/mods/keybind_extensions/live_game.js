@@ -202,6 +202,12 @@
     api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
   })
 
+  model.select_all_scouts_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Scout', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Scout', 'Fabber');
+  })
+
   // *************** selection edit **************
 
   model.only_construction_in_selection = function() {
@@ -233,6 +239,11 @@
     api.select.fromSelectionWithTypeFilter('Fighter', null, false) }
   model.remove_fighters_from_selection = function() {
     api.select.fromSelectionWithTypeFilter('Fighter', null, true) }
+
+  model.only_scouts_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Scout', null, false) }
+  model.remove_scouts_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Scout', null, true) }
 
   model.only_naval_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Naval', null, false) }
