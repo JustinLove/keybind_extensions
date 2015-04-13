@@ -156,6 +156,26 @@
   model.vision_player_9 = function(event) { model.visionSelect(8, event) }
   model.vision_player_10 = function(event) { model.visionSelect(9, event) }
 
+  model.vision_previous_player = function(event) {
+    var current = _.indexOf(model.playerVisionFlags(), 1)
+    if (current == -1) {
+      model.visionSelect(0, event)
+      return
+    }
+
+    model.visionSelect((current + model.playerVisionFlags().length - 1) % model.playerVisionFlags().length, event)
+  }
+
+  model.vision_next_player = function(event) {
+    var current = _.indexOf(model.playerVisionFlags(), 1)
+    if (current == -1) {
+      model.visionSelect(0, event)
+      return
+    }
+
+    model.visionSelect((current + 1) % model.playerVisionFlags().length, event)
+  }
+
   // *************** selection edit **************
 
   model.only_bots_in_selection = function() {

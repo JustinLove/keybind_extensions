@@ -53,6 +53,8 @@
   set = 'camera'
   display_sub_group = 'Specator Vision'
   kb('vision_all_players')
+  kb('vision_previous_player')
+  kb('vision_next_player')
   kb('vision_player_1')
   kb('vision_player_2')
   kb('vision_player_3')

@@ -1,6 +1,6 @@
 ## 1.2.0
 
-- spectator vision: all, player N
+- spectator vision: all, player N, previous/next
 
 ## 1.1.0
 

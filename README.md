@@ -28,6 +28,8 @@ Look at...
 ### Specatator Vision
 
 - All players
+- Previous player
+- Next player
 - Player N (1-10)
 
 ### Selection Edit
