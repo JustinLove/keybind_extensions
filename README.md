@@ -37,7 +37,7 @@ Look at...
 Select all on screen (double tap for planet)
 
 - Bot
-- Tank
+- Tank (aka vehicles)
 - Fighter
 - Scout
 
@@ -47,7 +47,8 @@ Only X in Selection and Remove X from Selection:
 
 - Construction (e.g. combat fabs)
 - Bot
-- Tank
+- Tank (aka vehicles)
+- Heavy (e.g. infernos)
 - Land
 - Air
 - Fighter

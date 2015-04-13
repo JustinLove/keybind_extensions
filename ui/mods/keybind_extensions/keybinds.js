@@ -81,6 +81,8 @@
   kb('remove_bots_from_selection')
   kb('only_tanks_in_selection')
   kb('remove_tanks_from_selection')
+  kb('only_heavies_in_selection')
+  kb('remove_heavies_from_selection')
   kb('only_land_in_selection')
   kb('remove_land_from_selection')
   kb('only_air_in_selection')

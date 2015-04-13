@@ -210,6 +210,7 @@
 
   // *************** selection edit **************
 
+  // combat fabs
   model.only_construction_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Construction', null, false) }
   model.remove_construction_from_selection = function() {
@@ -220,10 +221,17 @@
   model.remove_bots_from_selection = function() {
     api.select.fromSelectionWithTypeFilter('Bot', null, true) }
 
+  // aka vehicles
   model.only_tanks_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Tank', null, false) }
   model.remove_tanks_from_selection = function() {
     api.select.fromSelectionWithTypeFilter('Tank', null, true) }
+
+  // infernos (and vangaurds)
+  model.only_heavies_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Heavy', null, false) }
+  model.remove_heavies_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Heavy', null, true) }
 
   model.only_land_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Land', null, false) }

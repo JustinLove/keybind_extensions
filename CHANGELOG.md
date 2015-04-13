@@ -4,6 +4,7 @@
 - only/remove fighters in selection
 - only/remove scouts in selection
 - only/remove construction in selection (e.g. combat fabs)
+- only/remove heavies in selection (e.g. infernos)
 - select all bot/tank/fighter/scout on screen (double tap for planet)
 
 ## 1.1.0
