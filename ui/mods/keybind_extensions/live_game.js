@@ -210,6 +210,19 @@
 
   // *************** selection edit **************
 
+  model.only_one_in_selection = input.doubleTap(function() {
+    if (!model.selection()) return
+    var unit = _.chain(model.selection().spec_ids)
+      .toArray()
+      .flatten()
+      .sample()
+      .value()
+    if (!unit) return
+    engine.call("select.byIds", [unit])
+  }, function() {
+    api.camera.track(true)
+  })
+
   // combat fabs
   model.only_construction_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Construction', null, false) }

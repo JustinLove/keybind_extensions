@@ -43,6 +43,8 @@ Select all on screen (double tap for planet)
 
 ### Selection Edit
 
+- Only one in selection (double tap to track)
+
 Only X in Selection and Remove X from Selection:
 
 - Construction (e.g. combat fabs)

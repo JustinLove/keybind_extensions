@@ -1,3 +1,7 @@
+## 1.3.0
+
+- only one in selection
+
 ## 1.2.0
 
 - spectator vision: all, player N, previous/next

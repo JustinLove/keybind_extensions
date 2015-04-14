@@ -75,6 +75,7 @@
 
   set = 'gameplay'
   display_sub_group = 'Selection Edit'
+  kb('only_one_in_selection')
   kb('only_construction_in_selection')
   kb('remove_construction_from_selection')
   kb('only_bots_in_selection')
