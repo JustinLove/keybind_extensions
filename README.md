@@ -44,6 +44,7 @@ Select all on screen (double tap for planet)
 ### Selection Edit
 
 - Only one in selection (double tap to track)
+- Halve selection (within each unit type)
 
 Only X in Selection and Remove X from Selection:
 

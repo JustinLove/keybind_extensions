@@ -1,6 +1,7 @@
 ## 1.3.0
 
 - only one in selection
+- halve selection
 
 ## 1.2.0
 

@@ -223,6 +223,15 @@
     api.camera.track(true)
   })
 
+  model.halve_selection = function() {
+    if (!model.selection()) return
+    var units = _.flatten(_.toArray(model.selection().spec_ids).map(function(units) {
+      var n = Math.ceil(units.length / 2)
+      return _.sample(units, n)
+    }))
+    engine.call("select.byIds", units)
+  }
+
   // combat fabs
   model.only_construction_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Construction', null, false) }
