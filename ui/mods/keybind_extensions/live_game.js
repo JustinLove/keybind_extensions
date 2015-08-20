@@ -20,12 +20,9 @@
     document.dispatchEvent(keyboardEvent);
   }
 
-  model.currentFocusPlanetId = ko.observable(0)
-  var live_game_focus_planet_changed = handlers.focus_planet_changed
-  handlers.focus_planet_changed = function (payload) {
-    live_game_focus_planet_changed(payload)
-    model.currentFocusPlanetId(payload.focus_planet_id);
-  };
+  model.currentFocusPlanetId = function() {
+    return api.camera.getFocus(api.Holodeck.focused.id).planetId()
+  }
 
   //**************** pointer locked pan ************
   var panPreviousMode
@@ -79,7 +76,7 @@
     api.camera.lookAt({
       location: location,
       zoom: 'orbital',
-      planet_id: model.focusPlanet()
+      planet_id: api.camera.getFocus(api.Holodeck.focused.id).planetId(),
     })
     api.camera.alignToPole()
   }
@@ -109,45 +106,22 @@
 
   // **************** planet camera ****************
 
-  model.focus_planet_1 = function() {model.focusPlanet(0)}
-  model.focus_planet_2 = function() {model.focusPlanet(1)}
-  model.focus_planet_3 = function() {model.focusPlanet(2)}
-  model.focus_planet_4 = function() {model.focusPlanet(3)}
-  model.focus_planet_5 = function() {model.focusPlanet(4)}
-  model.focus_planet_6 = function() {model.focusPlanet(5)}
-  model.focus_planet_7 = function() {model.focusPlanet(6)}
-  model.focus_planet_8 = function() {model.focusPlanet(7)}
-  model.focus_planet_9 = function() {model.focusPlanet(8)}
-  model.focus_planet_10 = function() {model.focusPlanet(9)}
-  model.focus_planet_11 = function() {model.focusPlanet(10)}
-  model.focus_planet_12 = function() {model.focusPlanet(11)}
-  model.focus_planet_13 = function() {model.focusPlanet(12)}
-  model.focus_planet_14 = function() {model.focusPlanet(13)}
-  model.focus_planet_15 = function() {model.focusPlanet(14)}
-  model.focus_planet_16 = function() {model.focusPlanet(15)}
-
-  // patch that makes next and previous planet always work when focused on sun
-  model.changeFocusPlanet = function (delta) {
-      var index = model.focusPlanet();
-      var t = (index + delta) % (model.celestialViewModels().length - 1);
-
-      if (index === -1)
-          t = 0;
-
-      // Begin change
-      if (t == index) {
-        model.focusPlanet.notifySubscribers()
-      }
-      // End change
-
-      while (t !== index) {
-          if (!model.celestialViewModels()[t].dead()) {
-              model.focusPlanet(t);
-              return;
-          }
-          t = (t + delta) % (model.celestialViewModels().length - 1);
-      }
-  }
+  model.focus_planet_1 = function() {api.camera.focusPlanet(0)}
+  model.focus_planet_2 = function() {api.camera.focusPlanet(1)}
+  model.focus_planet_3 = function() {api.camera.focusPlanet(2)}
+  model.focus_planet_4 = function() {api.camera.focusPlanet(3)}
+  model.focus_planet_5 = function() {api.camera.focusPlanet(4)}
+  model.focus_planet_6 = function() {api.camera.focusPlanet(5)}
+  model.focus_planet_7 = function() {api.camera.focusPlanet(6)}
+  model.focus_planet_8 = function() {api.camera.focusPlanet(7)}
+  model.focus_planet_9 = function() {api.camera.focusPlanet(8)}
+  model.focus_planet_10 = function() {api.camera.focusPlanet(9)}
+  model.focus_planet_11 = function() {api.camera.focusPlanet(10)}
+  model.focus_planet_12 = function() {api.camera.focusPlanet(11)}
+  model.focus_planet_13 = function() {api.camera.focusPlanet(12)}
+  model.focus_planet_14 = function() {api.camera.focusPlanet(13)}
+  model.focus_planet_15 = function() {api.camera.focusPlanet(14)}
+  model.focus_planet_16 = function() {api.camera.focusPlanet(15)}
 
   // ************** spectator vision ************
 

@@ -1,3 +1,8 @@
+## 1.3.1
+
+- Redo focus planet handling with updated camera api
+- Hack for next/prev planet no longer required
+
 ## 1.3.0
 
 - only one in selection
