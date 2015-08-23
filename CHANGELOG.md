@@ -1,3 +1,7 @@
+## 1.3.2
+
+- Mistaken in removing hack for next/prev planet; base does not work in single-planet system
+
 ## 1.3.1
 
 - Redo focus planet handling with updated camera api

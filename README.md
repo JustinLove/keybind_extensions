@@ -12,6 +12,8 @@ Hold to pan operates closer to the middle mouse button.  I've found regular keys
 
 ### Focus planet 1-16.
 
+There is also a patch that makes next and previous planet work to always focus a planet when you were focused on the sun.
+
 ### Fixed planet anchors
 
 Look at...

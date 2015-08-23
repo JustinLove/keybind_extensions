@@ -3,7 +3,7 @@
   "build": "86422",
   "category": ["settings", "ui"],
   "context": "client",
-  "date": "2015/08/19",
+  "date": "2015/08/23",
   "description": "More possible functions for key binding.",
   "display_name": "Keybind Extensions",
   "forum": "https://forums.uberent.com/threads/rel-keybind-extensions.68478/",
@@ -18,6 +18,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.3.1"
+  "version": "1.3.2"
 }
 

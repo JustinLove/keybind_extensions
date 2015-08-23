@@ -123,6 +123,36 @@
   model.focus_planet_15 = function() {api.camera.focusPlanet(14)}
   model.focus_planet_16 = function() {api.camera.focusPlanet(15)}
 
+  // patch that makes next and previous planet always work when focused on sun
+  model.changeFocusPlanet = function (delta) {
+    var planets = model.celestialViewModels(),
+    oldFocus = api.camera.getFocus(api.Holodeck.focused.id).planet(),
+    idx = (oldFocus != -1) ? oldFocus : (delta > 0 ? 0 : planets.length - 1),
+    sentinel = idx,
+    advance = function() {
+      idx = (idx + delta + planets.length) % planets.length;
+      return (idx === sentinel) ? null : planets[idx];
+    },
+    planet;
+
+    if (delta !== -1 && delta !== 1)
+      return;
+
+    while (planet = advance()) {
+      if (!planet.dead() && !planet.isSun()) {
+        api.camera.focusPlanet(idx);
+        api.audio.playSound('/SE/UI/UI_planet_switch_select');
+        return;
+      }
+    }
+
+    // Begin change
+    // we wrapped around to the starting planet
+    api.camera.focusPlanet(idx);
+    api.audio.playSound('/SE/UI/UI_planet_switch_select');
+    // End change
+  }
+
   // ************** spectator vision ************
 
   model.vision_all_players = function() { model.visionSelectAll() }
