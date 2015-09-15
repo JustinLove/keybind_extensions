@@ -70,6 +70,8 @@
   display_sub_group = 'Selection'
   kb('select_all_bots_on_screen')
   kb('select_all_tanks_on_screen')
+  kb('select_all_orbital_on_screen')
+  kb('select_all_combat_orbital_on_screen')
   kb('select_all_fighters_on_screen')
   kb('select_all_scouts_on_screen')
 

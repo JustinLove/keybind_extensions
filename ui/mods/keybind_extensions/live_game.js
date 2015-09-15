@@ -200,6 +200,20 @@
     api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Tank', 'Fabber');
   })
 
+  model.select_all_orbital_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Fabber');
+  })
+
+  model.select_all_combat_orbital_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Fabber');
+    api.select.fromSelectionWithTypeFilter('Offense', null, false)
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Fabber');
+    api.select.fromSelectionWithTypeFilter('Offense', null, false)
+  })
+
   model.select_all_fighters_on_screen = input.doubleTap(function () {
     api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
   }, function () {

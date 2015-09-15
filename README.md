@@ -38,6 +38,8 @@ Select all on screen (double tap for planet)
 
 - Bot
 - Tank (aka vehicles)
+- Orbital
+- Combat Orbital
 - Fighter
 - Scout
 
