@@ -72,6 +72,8 @@
   kb('select_all_tanks_on_screen')
   kb('select_all_orbital_on_screen')
   kb('select_all_combat_orbital_on_screen')
+  kb('select_all_orbital_factories_on_screen')
+  kb('select_all_advanced_factories_on_screen')
   kb('select_all_fighters_on_screen')
   kb('select_all_scouts_on_screen')
 

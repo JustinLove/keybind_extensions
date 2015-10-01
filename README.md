@@ -40,6 +40,8 @@ Select all on screen (double tap for planet)
 - Tank (aka vehicles)
 - Orbital
 - Combat Orbital
+- Orbital Factories
+- Advanced Factories
 - Fighter
 - Scout
 

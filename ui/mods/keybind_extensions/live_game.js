@@ -214,6 +214,22 @@
     api.select.fromSelectionWithTypeFilter('Offense', null, false)
   })
 
+  model.select_all_orbital_factories_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Mobile');
+    api.select.fromSelectionWithTypeFilter('Factory', null, false)
+    api.select.fromSelectionWithTypeFilter('Advanced', null, false)
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Orbital', 'Mobile');
+    api.select.fromSelectionWithTypeFilter('Factory', null, false)
+    api.select.fromSelectionWithTypeFilter('Advanced', null, false)
+  })
+
+  model.select_all_advanced_factories_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Factory', 'Basic');
+  }, function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Factory', 'Basic');
+  })
+
   model.select_all_fighters_on_screen = input.doubleTap(function () {
     api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
   }, function () {

@@ -1,3 +1,7 @@
+## 1.5.0
+
+- Select all orbital-factory/advanced-factory on screen (double tap for planet)
+
 ## 1.4.0
 
 - Select all orbital/combat-orbital on screen (double tap for planet)
