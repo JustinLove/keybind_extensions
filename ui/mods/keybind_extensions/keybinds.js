@@ -76,6 +76,7 @@
   kb('select_all_advanced_factories_on_screen')
   kb('select_all_fighters_on_screen')
   kb('select_all_scouts_on_screen')
+  kb('select_matching_on_screen_then_planet')
 
   set = 'gameplay'
   display_sub_group = 'Selection Edit'

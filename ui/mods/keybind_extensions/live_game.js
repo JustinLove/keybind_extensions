@@ -242,6 +242,24 @@
     api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Scout', 'Fabber');
   })
 
+  model.select_matching_on_screen_then_planet = input.doubleTap(function() {
+    maybeInvoke('selectedAllMatchingCurrentSelectionOnScreen')
+  }, function() {
+    var selectedSpecs = model.selectionTypes()
+    model.holodeck.view.getArmyUnits(
+      model.armyIndex(),
+      model.currentFocusPlanetId()).then(function(units) {
+        var planetSpecs = Object.keys(units)
+        var targets = []
+        planetSpecs.forEach(function(spec) {
+          if (selectedSpecs.indexOf(spec) != -1) {
+            targets = targets.concat(units[spec])
+          }
+        })
+        api.select.unitsById(targets)
+      })
+  })
+
   // *************** selection edit **************
 
   model.only_one_in_selection = input.doubleTap(function() {

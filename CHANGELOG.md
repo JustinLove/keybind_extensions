@@ -1,3 +1,7 @@
+## 1.6.0
+
+- Select all matching selection on screen, double tap for planet
+
 ## 1.5.0
 
 - Select all orbital-factory/advanced-factory on screen (double tap for planet)

@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "88288",
+  "build": "89755",
   "category": ["settings", "ui"],
   "context": "client",
-  "date": "2015/10/01",
+  "date": "2015/11/11",
   "description": "More possible functions for key binding.",
   "display_name": "Keybind Extensions",
   "forum": "https://forums.uberent.com/threads/rel-keybind-extensions.68478/",
@@ -18,6 +18,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.5.0"
+  "version": "1.6.0"
 }
 
