@@ -1,3 +1,7 @@
+## 1.7.0
+
+- Select all radar on screen, double tap for planet
+
 ## 1.6.0
 
 - Select all matching selection on screen, double tap for planet

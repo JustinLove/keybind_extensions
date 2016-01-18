@@ -242,6 +242,12 @@
     api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Scout', 'Fabber');
   })
 
+  model.select_all_radar_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Recon', 'Fabber');
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Recon', 'Fabber');
+  })
+
   model.select_matching_on_screen_then_planet = input.doubleTap(function() {
     maybeInvoke('selectedAllMatchingCurrentSelectionOnScreen')
   }, function() {
