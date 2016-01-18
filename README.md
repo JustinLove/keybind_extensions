@@ -44,6 +44,7 @@ Select all on screen (double tap for planet)
 - Advanced Factories
 - Fighter
 - Scout
+- Radar (recon)
 - Matching selection
 
 ### Selection Edit
