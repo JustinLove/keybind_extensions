@@ -43,6 +43,7 @@ Select all on screen (double tap for planet)
 - Orbital Factories
 - Advanced Factories
 - Fighter
+- Transport (air)
 - Scout
 - Radar (recon)
 - Matching selection
@@ -61,6 +62,7 @@ Only X in Selection and Remove X from Selection:
 - Land
 - Air
 - Fighter
+- Transport
 - Scout
 - Naval
 - Orbital

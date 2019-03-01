@@ -1,3 +1,8 @@
+## 1.8.0
+
+- Select all air transport on screen, double tap for planet
+- Add/remove transports from selection
+
 ## 1.7.0
 
 - Select all radar on screen, double tap for planet

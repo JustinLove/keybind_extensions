@@ -236,6 +236,12 @@
     api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), 'Fighter', 'Fabber');
   })
 
+  model.select_all_air_transports_on_screen = input.doubleTap(function () {
+    api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), ['Transport', 'Air']);
+  }, function () {
+    api.select.onPlanetWithTypeFilter(model.currentFocusPlanetId(), ['Transport', 'Air']);
+  })
+
   model.select_all_scouts_on_screen = input.doubleTap(function () {
     api.select.onScreenWithTypeFilter(model.currentFocusPlanetId(), 'Scout', 'Fabber');
   }, function () {
@@ -327,6 +333,11 @@
     api.select.fromSelectionWithTypeFilter('Fighter', null, false) }
   model.remove_fighters_from_selection = function() {
     api.select.fromSelectionWithTypeFilter('Fighter', null, true) }
+
+  model.only_transports_in_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Transport', null, false) }
+  model.remove_transports_from_selection = function() {
+    api.select.fromSelectionWithTypeFilter('Transport', null, true) }
 
   model.only_scouts_in_selection = function() {
     api.select.fromSelectionWithTypeFilter('Scout', null, false) }
